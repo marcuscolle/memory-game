@@ -1,0 +1,124 @@
+/*--------------css------------*/
+
+
+/*-------the " * " is used to select all elements and make sure it opens with 
+the same vizualization in all nav's------*/
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+
+/*---width 1325px - 2 fileiras de 8 cartas mais 5px com espaco----*
+/*---height 495px - 2 fileiras de 2 cartas com 15px top and dowm and 5px---*/
+#container{
+    width: 1325px;
+    height: 705px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px auto;
+    background-color: lightgrey;
+    
+}
+
+
+/*-------card configuration------------*/
+
+.card{
+    width: 160px;
+    height: 170px;
+    position: absolute;
+    border-radius: 10px;
+    perspective: 600px; /*make deep vizualization more like 3d flipping*/
+    
+}
+
+.card:hover{
+    box-shadow: 0 0 20px black;
+}
+
+
+/*-----face configuration -face - front/back-------*/
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute;  /*is used to keep the cards in the same position one on top of the other*/
+    border-radius: 10px;
+    transition: all 1s; /*make us see the cards flipping during 1s transition */
+    backface-visibility: hidden; /* make the back of element transparent*/
+}
+
+.back{
+         background: url(../img/medium/verso.jpg);  
+    
+}
+
+
+/*------------flipped configuration-----*/
+.back.flipped{
+    transform: rotateY(180deg);
+}
+
+.front{
+     transform: rotateY(-180deg); /* must be minus 180deg because alredy comes with -180deg*/
+}
+
+.front.flipped {
+    transform: rotateY(0deg); /* it will get -180deg and rotate till get to 0deg again*/
+}
+
+/*----------------matched cards---------*/
+
+.face.flipped.match{
+    box-shadow: 0 0 30px purple;
+}
+
+
+/*--------------------------------game over ---------------------------*/
+
+#modalGameOver{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2; /*used o put the final message behind the cards* -- javascript will bring this page to the front*/
+}
+
+
+#imgGameOver{
+    margin-top: 100px;
+}
+
+#restart {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/*--------------------------------match sign ---------------------------*/
+
+#imgMatchSign{
+    position: relative;
+    top: 250px;
+    transition-property: top, opacity;
+    transition-duration: 1.5s;
+    opacity: 1;
+    z-index: -1;
+}
+
+p {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 180px;
+}
