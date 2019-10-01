@@ -41,8 +41,8 @@
             backFaces[i].classList.remove("flipped", "match");
 
             var card = document.querySelector("#card" + i); // #card + i = idcard plus his number on html 
-            card.style.left = i % 8 === 0 ? 5 + "px" : i % 8 * 165 + 5 + "px";
-            card.style.top = i < 8 ? 5 + "px" : i < 16 ? 180 + "px" : i < 24 ? 355 + "px" : 530 + "px"; //positionig the cards
+            card.style.left = i % 8 === 0 ? 5 + "px" : i % 8 * 105 + 5 + "px";
+            card.style.top = i < 8 ? 5 + "px" : i < 16 ? 130 + "px" : i < 24 ? 255 + "px" : 380 + "px"; //positionig the cards
 
             card.addEventListener("click", flipCard, false);
 

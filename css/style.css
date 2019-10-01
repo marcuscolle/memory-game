@@ -4,36 +4,45 @@
 /*-------the " * " is used to select all elements and make sure it opens with 
 the same vizualization in all nav's------*/
 
-*{
-   margin: 0;
-   padding: 0;
-}
 
 body{
     background-color: black;
     text-align: center;
+    margin: 0;
+   padding: 0;
 }
 
 
 /*---width 1325px - 2 fileiras de 8 cartas mais 5px com espaco----*
 /*---height 495px - 2 fileiras de 2 cartas com 15px top and dowm and 5px---*/
-#container{
-    width: 1325px;
-    height: 495px;
+#board{
+    width: 427px;
+    height: 502px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin: 80px auto;
+    background-color: darkorange;
+    
+}
+
+#board1{
+    width: 847px;
+    height: 507px;
     border: 1px solid black;
     border-radius: 10px;
     position: relative;
     margin: 10px auto;
-    background-color: lightgrey;
+    background-color: darkorange;
+    margin: 80px auto;
     
 }
-
 
 /*-------card configuration------------*/
 
 .card{
-    width: 160px;
-    height: 240px;
+    width: 100px;
+    height: 120px;
     position: absolute;
     border-radius: 10px;
     perspective: 600px; /*make deep vizualization more like 3d flipping*/
@@ -51,7 +60,7 @@ body{
     height: 100%;
     position: absolute;  /*is used to keep the cards in the same position one on top of the other*/
     border-radius: 10px;
-    transition: all 1s; /*make us see the cards flipping during 1s transition */
+    transition: all .4s; /*make us see the cards flipping during 1s transition */
     backface-visibility: hidden; /* make the back of element transparent*/
 }
 
@@ -102,6 +111,15 @@ body{
     text-align: center;
 }
 
+#clickcounter{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+}
+
 
 /*--------------------------------match sign ---------------------------*/
 
@@ -109,11 +127,15 @@ body{
     position: relative;
     top: 250px;
     transition-property: top, opacity;
-    transition-duration: 1.5s;
+    transition-duration: .6s;
     opacity: 1;
     z-index: -1;
 }
 
 p {
     color: #fff;
+}
+
+h1{
+    margin-top: 80px;
 }
