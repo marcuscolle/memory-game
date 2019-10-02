@@ -1,20 +1,13 @@
 /*--------------css------------*/
 
 
-/*-------the " * " is used to select all elements and make sure it opens with 
-the same vizualization in all nav's------*/
-
-
 body{
     background-color: black;
     text-align: center;
     margin: 0;
-   padding: 0;
+    padding: 0;
 }
 
-
-/*---width 1325px - 2 fileiras de 8 cartas mais 5px com espaco----*
-/*---height 495px - 2 fileiras de 2 cartas com 15px top and dowm and 5px---*/
 #board{
     width: 427px;
     height: 502px;
@@ -60,7 +53,7 @@ body{
     height: 100%;
     position: absolute;  /*is used to keep the cards in the same position one on top of the other*/
     border-radius: 10px;
-    transition: all .4s; /*make us see the cards flipping during 1s transition */
+    transition: all .5s; /*make us see the cards flipping during transition */
     backface-visibility: hidden; /* make the back of element transparent*/
 }
 
@@ -138,4 +131,10 @@ p {
 
 h1{
     margin-top: 80px;
+    color: #fff;
 }
+
+
+
+/*---------------------------@media-------------------------------------*/
+
