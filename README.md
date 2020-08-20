@@ -19,7 +19,7 @@ insted to the next level you have a choice to play again from the begining.
  
 ### Technologies Used
 
-To build this project i have used 
+To build this project i have used:
 
 -HTML
 -CSS
@@ -58,11 +58,11 @@ This site has been tested as responvise design in multiples devices as Desktop, 
 
 ### Deployment
 
-In order to view this project you can get and the codes in my git-hub space and run in a terminal:
+In order to view this project you can get the codes in my git-hub space and run into a terminal:
 
 https://github.com/marcuscolle/memory-game
 
-to make it run property the landing page is named index.html
+to make run property the landing page is named index.html
 
 
 ### Credits
@@ -82,7 +82,7 @@ My memory game was based in the youtube on: https://www.youtube.com/watch?v=U0I6
 
 #### Media 
 
-All the pictures where picked up from google images searching programming languages logo and codo institute logo.
+All the pictures where picked up from google images searching programming languages logo and code institute logo.
 
  
 
